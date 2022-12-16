@@ -1,0 +1,5 @@
+<div *ngFor="let datas of pages[currentPageIndex].component">
+    <app-header class="header" *ngIf="datas.compId === 1" [headerData]="datas.metadata"></app-header>
+    <router-outlet (activate)="onActivate($event)"></router-outlet>
+    <app-footer *ngIf="datas.compId===8" [footerData]="datas.metadata"></app-footer>
+</div>

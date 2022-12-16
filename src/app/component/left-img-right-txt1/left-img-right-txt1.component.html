@@ -1,0 +1,16 @@
+
+<div class="about" *ngIf="image">
+    <div class="photo">
+        <img [src]="image.url" [alt]="image.alt">
+    </div>
+    <div class="details">
+        <p>{{image.para1}}</p>
+           
+        <p><!-- Hence this name was suggested by Late Smt. Kusumtai Chaudhari while forming this profound education
+            movement. Chetana, a service oriented educational trust was established on 09th September, 1969 by
+            Respected Balasaheb Madhukarrao Chaudhari (former Education and Finance Minister, Government of
+            Maharashtra and Ex-Speaker, Maharashtra Legislative Assembly) -->
+            {{image.para1}}
+        </p>
+    </div>
+</div>

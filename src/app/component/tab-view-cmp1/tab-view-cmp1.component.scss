@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+li{
+    margin-top: 20px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.details{
+    padding: 2% 4%;
+    font-family: 'Ubuntu', sans-serif;
+}
+.facultyinfo{
+    padding: 3%;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+}
