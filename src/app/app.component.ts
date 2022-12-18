@@ -251,33 +251,33 @@ export class AppComponent {
         {
           compId: 8,
           compName: 'footer',
-          metadata: [
-            {
-              ContactCall: {
-                Number: '9321992130',
-              },
-              ContactMail: {
-                mail: 'chetanahscce@yahool.com'
-              },
-              socialMedia: [
-                {
-                  url: "../../assets/img/ig.png",
-                  alt: 'college insta page',
-                  link: 'https://www.instagram.com/chetanas_sfc/?hl=en'
-                },
-                {
-                  url: '../../assets/img/yt.png',
-                  alt: 'college youtube channel',
-                  link: 'https://www.youtube.com/channel/UCr2658Nq363khQvTSIxntwQ'
-                },
-                {
-                  url: '../../assets/img/fb.png',
-                  alt: 'college facebook page',
-                  link: 'https://www.facebook.com/people/Chetanas-Self-Financing-Courses/100064103347725/'
-                },
-              ]
-            }
-          ]
+          // metadata: [
+          //   {
+          //     ContactCall: {
+          //       Number: '9321992130',
+          //     },
+          //     ContactMail: {
+          //       mail: 'chetanahscce@yahool.com'
+          //     },
+          //     socialMedia: [
+          //       {
+          //         url: "../../assets/img/ig.png",
+          //         alt: 'college insta page',
+          //         link: 'https://www.instagram.com/chetanas_sfc/?hl=en'
+          //       },
+          //       {
+          //         url: '../../assets/img/yt.png',
+          //         alt: 'college youtube channel',
+          //         link: 'https://www.youtube.com/channel/UCr2658Nq363khQvTSIxntwQ'
+          //       },
+          //       {
+          //         url: '../../assets/img/fb.png',
+          //         alt: 'college facebook page',
+          //         link: 'https://www.facebook.com/people/Chetanas-Self-Financing-Courses/100064103347725/'
+          //       },
+          //     ]
+          //   }
+          // ]
         },
       ]
       }, 

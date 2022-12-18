@@ -1,20 +1,21 @@
 <!-- <div class="container acedemic" *ngFor="let comp of pages[currentPageIndex].component">
     <app-left-img1 [ImageData]="comp.metadata" *ngIf="comp.compID === 2"></app-left-img1> -->
-<div class="container acedemic" >
-  <app-left-img1 *ngFor="let datas of DropDownData" [ImageData]="datas.data"></app-left-img1>
-  <div class="accordion">
-    <div *ngFor="let datas of DropDownData">
-    <!-- {{DropDownData | json}} -->
-    <ngb-accordion [closeOthers]="true"  *ngFor="let data of datas.AccordianData;let i = index">
-      <ngb-panel [title]="data.Title" [id]="'static-'+i"> 
-        <ng-template ngbPanelContent>
-          <li *ngFor="let datas of data.SubTitles"><a *ngIf="datas" [routerLink]="datas.link">{{datas.title}}</a></li>
-         <!--  <li><a href="">{{data.SubTitle1}}</a></li>
-          <li><a href="">{{data.SubTitle2}}</a></li>
-          <li><a href="">{{data.SubTitle3}}</a></li> -->
-        </ng-template>
-      </ngb-panel>
-    </ngb-accordion>
-  </div>
-  </div>
-</div>
+    <div class="container acedemic" *ngFor="let datas of DropDownData">
+      <app-left-img1 *ngFor="let datas of datas.dropdown" [ImageData]="datas.data"></app-left-img1>
+      <div class="accordion" *ngFor="let datas of DropDownData" >
+        <div *ngFor="let datas of datas.dropdown">
+        <!-- {{DropDownData | json}} -->
+        <ngb-accordion [closeOthers]="true"  *ngFor="let data of datas.AccordianData;let i = index">
+          <ngb-panel [title]="data.Title" [id]="'static-'+i"> 
+            <ng-template ngbPanelContent>
+              <li *ngFor="let datas of data.SubTitles">
+                <a *ngIf="datas" [routerLink]="datas.link">{{datas.title}}</a></li>
+             <!--  <li><a href="">{{data.SubTitle1}}</a></li>
+              <li><a href="">{{data.SubTitle2}}</a></li>
+              <li><a href="">{{data.SubTitle3}}</a></li> -->
+            </ng-template>
+          </ngb-panel>
+        </ngb-accordion>
+      </div>
+      </div>
+    </div>

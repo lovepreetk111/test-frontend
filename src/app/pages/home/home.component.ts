@@ -179,114 +179,114 @@ export class HomeComponent implements OnInit {
         {
           compID: 5,
           compName: "Accordian",
-          metadata: [
-            {
-              data: [
-                {
-                  url: "../../../assets//images/ChetanaJC.svg",
-                  alt: 'kuch toh hai',
-                  Text: 'Acedemic'
-                }]
-            },
-            {
-              AccordianData: [
-                {
-                  Title: 'JUNIOR COLLEGE',
-                  SubTitles:[
-                    {
-                      id:1,
-                      title:"Arts",
-                      link:"course/arts"
-                    },
-                    {
-                      id:2,
-                      title:"Commerce",
-                      link:"course/comm"
-                    },
-                    {
-                      id:3,
-                      title:"MCVC",
-                      link:"course/mcvc"
-                    }
-                  ]
-                },
-                {
-                  Title: 'DEGREE COLLEGE',
-                  SubTitles:[
-                    {
-                      id:1,
-                      title:"BA",
-                      link:"course/ba"
-                    },
-                    {
-                      id:2,
-                      title:"BCOM",
-                      link:"course/bcom"
-                    },
+          // metadata: [
+          //   {
+          //     data: [
+          //       {
+          //         url: "../../../assets//images/ChetanaJC.svg",
+          //         alt: 'kuch toh hai',
+          //         Text: 'Acedemic'
+          //       }]
+          //   },
+          //   {
+          //     AccordianData: [
+          //       {
+          //         Title: 'JUNIOR COLLEGE',
+          //         SubTitles:[
+          //           {
+          //             id:1,
+          //             title:"Arts",
+          //             link:"course/arts"
+          //           },
+          //           {
+          //             id:2,
+          //             title:"Commerce",
+          //             link:"course/comm"
+          //           },
+          //           {
+          //             id:3,
+          //             title:"MCVC",
+          //             link:"course/mcvc"
+          //           }
+          //         ]
+          //       },
+          //       {
+          //         Title: 'DEGREE COLLEGE',
+          //         SubTitles:[
+          //           {
+          //             id:1,
+          //             title:"BA",
+          //             link:"course/ba"
+          //           },
+          //           {
+          //             id:2,
+          //             title:"BCOM",
+          //             link:"course/bcom"
+          //           },
                     
-                  ]
-                },
-                {
-                  Title: 'SELF FINANCING COURSES',
-                  SubTitles:[
-                    {
-                      id:1,
-                      title:"BMS",
-                      link:"course/bms"
-                    },
-                    {
-                      id:2,
-                      title:"BAF",
-                      link:"course/baf"
-                    },
-                    {
-                      id:3,
-                      title:"BAMMC",
-                      link:"course/bammc"
-                    },
-                    {
-                      id:4,
-                      title:"B.Sc.IT",
-                      link:"course/bscit"
-                    }
-                  ]
-                },
-                {
-                  Title: 'POST GRADUATE PROGRAMME',
-                  SubTitles:[
-                    {
-                      id:1,
-                      title:"MASTER OF COMMERCE",
-                      link:"course/mcom"
-                    },
+          //         ]
+          //       },
+          //       {
+          //         Title: 'SELF FINANCING COURSES',
+          //         SubTitles:[
+          //           {
+          //             id:1,
+          //             title:"BMS",
+          //             link:"course/bms"
+          //           },
+          //           {
+          //             id:2,
+          //             title:"BAF",
+          //             link:"course/baf"
+          //           },
+          //           {
+          //             id:3,
+          //             title:"BAMMC",
+          //             link:"course/bammc"
+          //           },
+          //           {
+          //             id:4,
+          //             title:"B.Sc.IT",
+          //             link:"course/bscit"
+          //           }
+          //         ]
+          //       },
+          //       {
+          //         Title: 'POST GRADUATE PROGRAMME',
+          //         SubTitles:[
+          //           {
+          //             id:1,
+          //             title:"MASTER OF COMMERCE",
+          //             link:"course/mcom"
+          //           },
                     
-                  ]
-                },
-                {
-                  Title: 'DOCTORAL Programme',
-                  SubTitles:[
-                    {
-                      id:1,
-                      title:"PH. D. In Commerce",
-                      link:"course/arts"
-                    },
+          //         ]
+          //       },
+          //       {
+          //         Title: 'DOCTORAL Programme',
+          //         SubTitles:[
+          //           {
+          //             id:1,
+          //             title:"PH. D. In Commerce",
+          //             link:"course/arts"
+          //           },
                     
-                  ]
-                },
-                {
-                  Title: 'DISTANCE LEARNING',
-                  SubTitles:[
-                    {
-                      id:1,
-                      title:"Y.C.M.O.U",
-                      link:"course/yomuc"
-                    },
+          //         ]
+          //       },
+          //       {
+          //         Title: 'DISTANCE LEARNING',
+          //         SubTitles:[
+          //           {
+          //             id:1,
+          //             title:"Y.C.M.O.U",
+          //             link:"course/yomuc"
+          //           },
                     
-                  ]
-                }
-              ]
-            }
-          ],
+          //         ]
+          //       }
+          //     ]
+          //   }
+          // ],
         },
         {
           compId: 6,
