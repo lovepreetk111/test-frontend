@@ -93,6 +93,9 @@ export interface IPictureComponentImage {
 }
 
 /* ====================================== Accordian Section =============================*/
+export interface IallDropdown{
+  dropdown:IDropDown[]
+ }
 export interface IDropDown {
   data: Ileftimg1[]
   AccordianData: IAccordianData[]
@@ -150,17 +153,14 @@ export interface ICardCarosuelData {
 
 /* ==================================== Footer component ================================ */
 export interface IFooterCmp {
-  ContactCall: {
-    Number: string;
-  },
-  ContactMail: {
-    mail: string;
-  },
+
+  number: string;
+  mail: string;
   socialMedia: {
-    url: string,
-    alt: string,
-    link: string,
-  }[]
+  url: string,
+  alt: string,
+  link: string,
+}[]
 }
 
 /* *************************************** ABOUT US ******************************* */
