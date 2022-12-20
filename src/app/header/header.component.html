@@ -45,14 +45,15 @@
 <!-- </p-menubar> -->
 <header>
     <div *ngFor="let datas of headerData">
-        <div class="top">
-            <ul *ngFor="let data of datas.implinksdata">
+        <div class="top"*ngFor="let data of datas.header" >
+            <ul *ngFor="let data of data.implinksdata">
                 <li><a [href]="data.routeLinks"></a>
                     {{data.impLinks}}
                 </li>
             </ul>
         </div>
-        <div class="bottom" *ngFor="let data of datas.logo">
+        <div class="bottom" *ngFor="let datas of datas.header">
+            <div *ngFor="let data of datas.logo">
             <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <a class="navbar-brand pb-2" href="#">
                     <img src="assets/images/Chetana Logo.svg" alt="">
@@ -95,6 +96,7 @@
                     </ul>
                 </div>
             </nav>
+            </div>
         </div>
     </div>
 </header>

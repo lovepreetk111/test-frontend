@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
-import { InavbarConfig } from '../service/data';
+import { BanDataService } from '../service/ban-data.service';
+import { IallNavbar, InavbarConfig } from '../service/data';
 import { DataserviceService } from '../service/dataservice.service';
 
 @Component({
@@ -8,9 +10,9 @@ import { DataserviceService } from '../service/dataservice.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-@Input() headerData:InavbarConfig[] = []
+@Input() headerData:IallNavbar[] = []
   // DataserviceService: any;
-  constructor( private dataservice: DataserviceService) { }
+  constructor(private dataservice: BanDataService, private http:HttpClient) { }
 
   ngOnInit(): void {
     this.dataservice.getNavbarData().subscribe(

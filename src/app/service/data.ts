@@ -1,4 +1,7 @@
 /* ================================ Header =================================== */
+export interface IallNavbar{
+  header:InavbarConfig[]
+}
 export interface InavbarConfig {
   id: string
   implinksdata: IImpLinks[]

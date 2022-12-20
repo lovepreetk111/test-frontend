@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IallDropdown, IBannerCarosuelComponent, IFooterCmp, Inotice } from './data';
+import { IallDropdown, IallNavbar, IBannerCarosuelComponent, IFooterCmp, Inotice } from './data';
 
 @Injectable({
   providedIn: 'root'
@@ -29,5 +29,8 @@ getNoticeData():Observable<Inotice[]>{
       return this.http.get<IallDropdown[]>(`${this.apiUrl}accordian-dropdown`)
       }
 
+      getNavbarData():Observable<IallNavbar[]>{
+        return this.http.get<IallNavbar[]>(`${this.apiUrl}navbar`)
+        }
 
 }
