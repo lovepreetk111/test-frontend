@@ -30,7 +30,7 @@ getNoticeData():Observable<Inotice[]>{
       }
 
       getNavbarData():Observable<IallNavbar[]>{
-        return this.http.get<IallNavbar[]>(`${this.apiUrl}navbar`)
+        return this.http.get<IallNavbar[]>(`${this.apiUrl}navbarData`)
         }
 
 }
