@@ -277,3 +277,9 @@ export interface Istudentsupport{
   url:string,
   alt:string,
 }
+
+export interface INoticeConfig{
+ noticeName:string,
+ noticeDes:string,
+ routeLink:string  
+}
