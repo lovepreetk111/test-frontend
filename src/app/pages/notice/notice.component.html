@@ -1,49 +1,59 @@
 <div class="main-container">
-	<div class="notice-container" *ngIf="NoticeData.length>0">
-		<div class="main">
-			<div class="heading">
-				<app-button-cmp1 [Text]="title"></app-button-cmp1>
-			</div>
-			<div class="info-container" *ngFor="let item of NoticeData">
-				<!-- 1st row -->
-				<div class="data" *ngIf="item.routeLink">
-					<a href="#" target="_blank">
-						<div class="iner-data">
-							<p class="notice-name">{{item.noticeName}}</p>
-							<span class="date">12 DEC 2022</span>
+	<div class="notice-container">
+		<div class="heading"> New Notice</div>
+
+		<div class="info-container">
+
+			<div class="popupModule" *ngFor="let item of NoticeData">
+				<!-- Button trigger modal -->
+				<button type="button" class="btn module-button" data-bs-toggle="modal"
+					data-bs-target="#staticBackdrop2">
+					<div class="notice-heading">
+						<p>{{item.noticeTitle}}</p>
+						<p>{{item.noticeDate}}</p>
+					</div>
+					<div class="details">
+						<p>{{item.noticeName}}</p>
+					</div>
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+					tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" *ngFor="let data of item.innerNoticeData">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="staticBackdropLabel">{{item.noticeTitle}} Title</h1>
+								<button type="button" class="btn-close " data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<img [src]="data.img" onError="this.style.display = 'none';" [alt]="item.noticeTitle" />
+								<p>{{data.noticeInfoText}}</p>
+							</div>
+							<div class="modal-footer">
+								<div class="UplodeDate">
+									<p>{{data.createdAt |date}}</p>
+								</div>
+								<div class="EditorsDetails">
+									<p>{{data.createdBy}}</p>
+									<p></p>
+								</div>
+							</div>
 						</div>
-						<p>{{item.noticeDes}}</p>
-					</a>
+					</div>
 				</div>
 
-				<div class="data" *ngIf="!item.routeLink">
-
-				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="notice-container" *ngIf="NoticeData.length>0">
-		<div class="main">
-			<div class="heading">
-				<app-button-cmp1 [Text]="title"></app-button-cmp1>
+		<div class="notice-container">
+			<div class="heading"> Old Notice</div>
+
+			<div class="info-container">
+
+				
 			</div>
-			<div class="info-container" *ngFor="let item of NoticeData">
-				<!-- 1st row -->
-				<div class="data" *ngIf="item.routeLink">
-					<a href="#" target="_blank">
-						<div class="iner-data">
-							<p class="notice-name">{{item.noticeName}}</p>
-							<span class="date">12 DEC 2022</span>
-						</div>
-						<p>{{item.noticeDes}}</p>
-					</a>
-				</div>
 
-				<div class="data" *ngIf="!item.routeLink">
-
-				</div>
-			</div>
 		</div>
 	</div>
-</div>

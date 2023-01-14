@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IallDropdown, IBannerCarosuelComponent, IFooterCmp, Inotice } from './data';
+import { IallDropdown, IBannerCarosuelComponent, IFooterCmp, Inotice, INoticeConfig } from './data';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +17,7 @@ export class BanDataService {
     console.log(this.apiUrl)
     return this.http.get<IBannerCarosuelComponent[]>(`${this.apiUrl}bannerData`);
 }
-getNoticeData():Observable<Inotice[]>{
+getMarque():Observable<Inotice[]>{
   return this.http.get<Inotice[]>(`${this.apiUrl}notice`)
   } 
   
@@ -28,6 +28,13 @@ getNoticeData():Observable<Inotice[]>{
     getAccordianData():Observable<IallDropdown[]>{
       return this.http.get<IallDropdown[]>(`${this.apiUrl}accordian-dropdown`)
       }
+
+      getNoticeData():Observable<INoticeConfig[]>{
+        return this.http.get<INoticeConfig[]>(`${this.apiUrl}notice-config`)
+      }
+
+
+
 
 
 }

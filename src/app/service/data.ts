@@ -1,4 +1,4 @@
-/* ================================ Header =================================== */
+  /* ================================ Header =================================== */
 export interface InavbarConfig {
   id: string
   implinksdata: IImpLinks[]
@@ -276,7 +276,22 @@ export interface Istudentsupport{
 }
 
 export interface INoticeConfig{
+  innerNoticeData:IInnerNoticeData[]
+ dashboardInfo: IDashboardInfo[]
+ noticeTitle:string, 
+ noticeDate:string, 
  noticeName:string,
- noticeDes:string,
- routeLink:string  
+}
+
+export interface IInnerNoticeData{
+  img:string
+ noticeInfoText:string
+ createdBy:string
+ createdAt:string,
+}
+
+export interface IDashboardInfo{
+  displayName:string,
+  updatedAt:string, 
+  updatedBy:string
 }

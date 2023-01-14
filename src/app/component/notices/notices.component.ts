@@ -12,7 +12,7 @@ export class NoticesComponent implements OnInit {
   constructor(private banData:BanDataService) { }
 
   ngOnInit(): void {
-    this.banData.getNoticeData().subscribe(
+    this.banData.getMarque().subscribe(
       data => {
         console.log(data)
         this.InputData = data;
